@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.58/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.15","target":"arcade","targetVersion":"1.12.58","repo":"mame-mor-m/code-ninjas-tutorials"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.58/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.16","target":"arcade","targetVersion":"1.12.58","repo":"mame-mor-m/code-ninjas-tutorials"}
 // total=1928342 new=7.14% cached=87.95% other=4.91%
 (function (ectx) {
 'use strict';
@@ -563,7 +563,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P51319(s) {
+function _main___P51788(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1278,13 +1278,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P51319.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Codey's Shopping Spree/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P51319.continuations = [  ]
+_main___P51788.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/Codey's Shopping Spree/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P51788.continuations = [  ]
 
-function _main___P51319_mk(s) {
+function _main___P51788_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P51319, depth: s.depth + 1,
+        parent: s, fn: _main___P51788, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -64578,5 +64578,5 @@ const sprites_StaticObstacle__C27553_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___29397","tile1___29399","tile2___29400","tile3___29401","tile4___29402","tile5___29403","tile6___29404","tile7___29405","tile9___29406","tile10___29407","tile11___29408","tile12___29409","tile8___29398","Sign___51042","Item___51045","OwnedItem___51048","Shop_Sign___51059","Fake_Name___51065","Cody___51116","NinjaStar___51139","NinjaCoins___51148"])
 
-return _main___P51319
+return _main___P51788
 })
