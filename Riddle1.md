@@ -1,4 +1,4 @@
-### @hideDone true
+
 ```
 ```template
 namespace SpriteKind {
@@ -157,7 +157,7 @@ Codey is trying to buy decorations for the center as the 2nd year anniversary ap
 
 Fix the bug in the code so Codey can enter the ninja shop!
 
-Codey makes his way into the ninja shop but notices something is off with the sign, he starts to think this is not the right place
+Codey makes his way into the ninja shop but notices something is off with the sign, he starts to think that this is not the right shop
 
 What's wrong with the sign text? Fix the code!
 
@@ -170,6 +170,6 @@ Make sure Cody has to pay for the decorations!
 Reminder: The player shouldn't be able to pick up a coin more than once
 
 
-## Riddle Answer: AAAABBBCC @showdialog
+## Riddle Answer: NINJA STAR @showdialog
 
 THIS IS THE ANSWER TO THE RIDDLE
