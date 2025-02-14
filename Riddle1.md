@@ -28,15 +28,66 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 let Fake_Name = ""
 let Shop_Sign: Sprite = null
 tiles.setCurrentTilemap(tilemap`Store`)
-let Codey = sprites.create(assets.image`Ninja`, SpriteKind.Player)
+let Codey = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player)
 tiles.placeOnTile(Codey, tiles.getTileLocation(8, 4))
-Shop_Sign = sprites.create(assets.image`Sign`, SpriteKind.Sign)
+Shop_Sign = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Sign)
 tiles.placeOnTile(Shop_Sign, tiles.getTileLocation(9, 11))
 scene.cameraFollowSprite(Codey)
 controller.moveSprite(Codey)
 Fake_Name = "N1nnja Sh00p"
 let Real_Shop_Name = "Ninja Shop"
-let NinjaStar = sprites.create(assets.image`Ninja Star`, SpriteKind.Item)
+let NinjaStar = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Item)
 tiles.placeOnTile(NinjaStar, tiles.getTileLocation(4, 7))
 let NinjaCoins = sprites.create(img`
     . . . b b b . . 
@@ -47,7 +98,7 @@ let NinjaCoins = sprites.create(img`
     . c d d 1 d 5 c 
     . . f d d d f . 
     . . . f f f . . 
-    `, SpriteKind.Player)
+    `, SpriteKind.Food)
 tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(4, 2))
 NinjaCoins = sprites.create(img`
     . . . b b b . . 
@@ -58,7 +109,7 @@ NinjaCoins = sprites.create(img`
     . c d d 1 d 5 c 
     . . f d d d f . 
     . . . f f f . . 
-    `, SpriteKind.Player)
+    `, SpriteKind.Food)
 tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(8, 2))
 NinjaCoins = sprites.create(img`
     . . . b b b . . 
@@ -69,7 +120,7 @@ NinjaCoins = sprites.create(img`
     . c d d 1 d 5 c 
     . . f d d d f . 
     . . . f f f . . 
-    `, SpriteKind.Player)
+    `, SpriteKind.Food)
 tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(14, 5))
 NinjaCoins = sprites.create(img`
     . . . b b b . . 
@@ -80,22 +131,24 @@ NinjaCoins = sprites.create(img`
     . c d d 1 d 5 c 
     . . f d d d f . 
     . . . f f f . . 
-    `, SpriteKind.Player)
+    `, SpriteKind.Food)
 tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(1, 5))
 info.setScore(0)
+
 
 ```
 
 # Codey's Shopping Spree
 
 ## Codey's Shopping Spree @showdialog
-
-## Introduction
 Hello Ninjas, welcome to the first riddle of the Code Ninjas 2nd year anniversary event!
 
 You will be guided through these activities with steps and clues of what needs to be solved in this side panel, if you think everythings correct, move on to the next step!
 
 ## Step 1
+Somethings missing! Design your own codey sprite, sign sprite, and ninja star sprite so there are no more empty sprites!
+
+## Step 2
 Codey is trying to buy decorations for the center as the 2nd year anniversary approaches. He heads over to the ninja shop in search of something matching the ninja theme, unfortunately he runs into a problem.
 
 Fix the bug in the code so Codey can enter the ninja shop!
@@ -104,7 +157,7 @@ Codey makes his way into the ninja shop but notices something is off with the si
 
 What's wrong with the sign text? Fix the code!
 
-## Step 2
+## Step 3
 
 Codey enters the store and picks up a few ninja stars and some ninja belts, Codey his wallet to pay and notices a hole at the bottom, he has no money but somehow the cashier lets him leave for free
 
