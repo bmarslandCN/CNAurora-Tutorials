@@ -1,3 +1,4 @@
+### @hideDone true
 ```
 ```template
 namespace SpriteKind {
@@ -162,9 +163,13 @@ What's wrong with the sign text? Fix the code!
 
 ## Step 3
 
-Codey enters the store and picks up a few ninja stars and some ninja belts, Codey his wallet to pay and notices a hole at the bottom, he has no money but somehow the cashier lets him leave for free
+Cody enters the store and picks up a few ninja stars and some ninja belts, Cody his wallet to pay and notices a hole at the bottom, he has no money but somehow the cashier lets him leave for free
 
-Make sure Codey has to pay for the decorations!
+Make sure Cody has to pay for the decorations!
+
+Reminder: The player shouldn't be able to pick up a coin more than once
 
 
-## Clue Answer: AAAABBBCC @showdialog
+## Riddle Answer: AAAABBBCC @showdialog
+
+THIS IS THE ANSWER TO THE RIDDLE
