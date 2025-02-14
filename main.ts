@@ -26,12 +26,12 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 let Fake_Name = ""
 let Shop_Sign: Sprite = null
 tiles.setCurrentTilemap(tilemap`Store`)
-let Cody = sprites.create(assets.image`Ninja`, SpriteKind.Player)
-tiles.placeOnTile(Cody, tiles.getTileLocation(4, 8))
+let Codey = sprites.create(assets.image`Ninja`, SpriteKind.Player)
+tiles.placeOnTile(Codey, tiles.getTileLocation(8, 4))
 Shop_Sign = sprites.create(assets.image`Sign`, SpriteKind.Sign)
 tiles.placeOnTile(Shop_Sign, tiles.getTileLocation(9, 11))
-scene.cameraFollowSprite(Cody)
-controller.moveSprite(Cody)
+scene.cameraFollowSprite(Codey)
+controller.moveSprite(Codey)
 Fake_Name = "N1nnja Sh00p"
 let Real_Shop_Name = "Ninja Shop"
 let NinjaStar = sprites.create(assets.image`Ninja Star`, SpriteKind.Item)
@@ -45,7 +45,7 @@ let NinjaCoins = sprites.create(img`
     . c d d 1 d 5 c 
     . . f d d d f . 
     . . . f f f . . 
-    `, SpriteKind.Food)
+    `, SpriteKind.Player)
 tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(4, 2))
 NinjaCoins = sprites.create(img`
     . . . b b b . . 
@@ -56,7 +56,7 @@ NinjaCoins = sprites.create(img`
     . c d d 1 d 5 c 
     . . f d d d f . 
     . . . f f f . . 
-    `, SpriteKind.Food)
+    `, SpriteKind.Player)
 tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(8, 2))
 NinjaCoins = sprites.create(img`
     . . . b b b . . 
@@ -67,7 +67,7 @@ NinjaCoins = sprites.create(img`
     . c d d 1 d 5 c 
     . . f d d d f . 
     . . . f f f . . 
-    `, SpriteKind.Food)
+    `, SpriteKind.Player)
 tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(14, 5))
 NinjaCoins = sprites.create(img`
     . . . b b b . . 
@@ -78,6 +78,6 @@ NinjaCoins = sprites.create(img`
     . c d d 1 d 5 c 
     . . f d d d f . 
     . . . f f f . . 
-    `, SpriteKind.Food)
+    `, SpriteKind.Player)
 tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(1, 5))
 info.setScore(0)

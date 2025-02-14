@@ -1,10 +1,9 @@
 {
     "name": "Anniversary Tutorials",
-    "version": "0.0.8",
+    "version": "0.0.3",
     "description": "",
     "dependencies": {
-        "device": "*",
-        "Codey's Shopping Spree": "github:mame-mor-m/anniversary-first-tutorial#v0.0.10"
+        "device": "*"
     },
     "files": [
         "main.blocks",
@@ -15,8 +14,7 @@
         "tilemap.g.jres",
         "tilemap.g.ts",
         "images.g.jres",
-        "images.g.ts",
-        "tutorial-info-cache.json"
+        "images.g.ts"
     ],
     "testFiles": [
         "test.ts"
