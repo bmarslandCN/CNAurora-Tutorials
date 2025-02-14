@@ -138,6 +138,9 @@ info.setScore(0)
 
 ```
 
+```assetjson
+
+```
 # Codey's Shopping Spree
 
 ## Codey's Shopping Spree @showdialog
@@ -162,3 +165,6 @@ What's wrong with the sign text? Fix the code!
 Codey enters the store and picks up a few ninja stars and some ninja belts, Codey his wallet to pay and notices a hole at the bottom, he has no money but somehow the cashier lets him leave for free
 
 Make sure Codey has to pay for the decorations!
+
+
+## Clue Answer: AAAABBBCC @showdialog
