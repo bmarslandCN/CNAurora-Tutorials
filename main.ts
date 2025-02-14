@@ -26,12 +26,12 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 let Fake_Name = ""
 let Shop_Sign: Sprite = null
 tiles.setCurrentTilemap(tilemap`Store`)
-let Codey = sprites.create(assets.image`Ninja`, SpriteKind.Player)
-tiles.placeOnTile(Codey, tiles.getTileLocation(8, 4))
+let Cody = sprites.create(assets.image`Ninja`, SpriteKind.Player)
+tiles.placeOnTile(Cody, tiles.getTileLocation(8, 4))
 Shop_Sign = sprites.create(assets.image`Sign`, SpriteKind.Sign)
 tiles.placeOnTile(Shop_Sign, tiles.getTileLocation(9, 11))
-scene.cameraFollowSprite(Codey)
-controller.moveSprite(Codey)
+scene.cameraFollowSprite(Cody)
+controller.moveSprite(Cody)
 Fake_Name = "N1nnja Sh00p"
 let Real_Shop_Name = "Ninja Shop"
 let NinjaStar = sprites.create(assets.image`Ninja Star`, SpriteKind.Item)
