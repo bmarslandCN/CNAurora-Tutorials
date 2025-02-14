@@ -170,6 +170,3 @@ Make sure Cody has to pay for the decorations!
 Reminder: The player shouldn't be able to pick up a coin more than once
 
 
-## Riddle Answer: NINJA STAR @showdialog
-
-THIS IS THE ANSWER TO THE RIDDLE
