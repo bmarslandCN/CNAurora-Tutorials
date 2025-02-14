@@ -3,7 +3,8 @@
     "version": "0.0.12",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "Codey's Shopping Spree": "github:mame-mor-m/anniversary-first-tutorial#v0.0.10"
     },
     "files": [
         "main.blocks",
