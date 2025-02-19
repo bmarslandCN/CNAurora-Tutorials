@@ -14,7 +14,87 @@
   "tutorial-info-cache.json": "{\"https://github.com/mame-mor-m/code-ninjas-tutorials\":{\"snippetBlocks\":{},\"usedBlocks\":{},\"highlightBlocks\":{},\"hash\":\"9e6820b544695f18661751794d716b475364ea1fa7a324e9bce380047e27fc78\"},\"https://github.com/mame-mor-m/code-ninjas-tutorials/Riddle1\":{\"snippetBlocks\":{\"0b9d0fafd22d4353b855e0f823a61473947bf9914438e16e939b12abcab98270\":{\"spriteshittile\":2,\"spritesoverlap\":2,\"pxt-on-start\":1,\"spritesaytext\":4,\"controls_if\":1,\"hudChangeScoreBy\":1,\"set_current_tilemap\":1,\"text_join\":2,\"spritesetpos\":2,\"logic_compare\":1,\"spriteFollowOtherSprite\":1,\"variables_set\":9,\"variables_get\":2,\"argument_reporter_custom\":7,\"hudScore\":1,\"spritesetkind\":1,\"spritescreate\":7,\"mapplaceontile\":7,\"camerafollow\":1,\"game_control_sprite\":1,\"text\":2,\"hudsetScore\":1}},\"usedBlocks\":{\"spriteshittile\":1,\"spritesoverlap\":1,\"pxt-on-start\":1,\"spritesaytext\":1,\"controls_if\":1,\"hudChangeScoreBy\":1,\"set_current_tilemap\":1,\"text_join\":1,\"spritesetpos\":1,\"logic_compare\":1,\"spriteFollowOtherSprite\":1,\"variables_set\":1,\"variables_get\":1,\"argument_reporter_custom\":1,\"hudScore\":1,\"spritesetkind\":1,\"spritescreate\":1,\"mapplaceontile\":1,\"camerafollow\":1,\"game_control_sprite\":1,\"text\":1,\"hudsetScore\":1},\"highlightBlocks\":{\"0b9d0fafd22d4353b855e0f823a61473947bf9914438e16e939b12abcab98270\":{}},\"hash\":\"0b9d0fafd22d4353b855e0f823a61473947bf9914438e16e939b12abcab98270\"}}"
 }
 ```
+```template
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
+    Shop_Sign.sayText("Welcome to the " + Fake_Name, 1000, false)
+    sprite.setPosition(130, 250)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`Door tile`, function (sprite, location) {
+    Shop_Sign.sayText("Welcome to the " + Fake_Name, 1000, false)
+    sprite.setPosition(130, 225)
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    if (info.score() < 4) {
+        otherSprite.follow(sprite, 40)
+        otherSprite.setKind(SpriteKind.OwnedItem)
+        sprite.sayText("Purchased: Ninja Star", 1000, false)
+    } else {
+        otherSprite.sayText("Not enough coins")
+    }
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
+    info.changeScoreBy(1)
+})
+let Fake_Name = ""
+let Shop_Sign: Sprite = null
+tiles.setCurrentTilemap(tilemap`Store`)
+let Cody = sprites.create(assets.image`Ninja`, SpriteKind.Player)
+tiles.placeOnTile(Cody, tiles.getTileLocation(8, 4))
+Shop_Sign = sprites.create(assets.image`Sign`, SpriteKind.Enemy)
+tiles.placeOnTile(Shop_Sign, tiles.getTileLocation(9, 11))
+scene.cameraFollowSprite(Cody)
+controller.moveSprite(Cody)
+Fake_Name = "N1nnja Sh00p"
+let Real_Shop_Name = "Ninja Shop"
+let NinjaStar = sprites.create(assets.image`Ninja Star`, SpriteKind.Projectile)
+tiles.placeOnTile(NinjaStar, tiles.getTileLocation(4, 7))
+let NinjaCoins = sprites.create(img`
+    . . . b b b . . 
+    . . b 5 5 5 b . 
+    . b 5 d 3 d 5 b 
+    . b 5 1 5 3 5 b 
+    . c d 1 5 3 5 c 
+    . c d d 1 d 5 c 
+    . . f d d d f . 
+    . . . f f f . . 
+    `, SpriteKind.Food)
+tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(4, 2))
+NinjaCoins = sprites.create(img`
+    . . . b b b . . 
+    . . b 5 5 5 b . 
+    . b 5 d 3 d 5 b 
+    . b 5 1 5 3 5 b 
+    . c d 1 5 3 5 c 
+    . c d d 1 d 5 c 
+    . . f d d d f . 
+    . . . f f f . . 
+    `, SpriteKind.Food)
+tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(8, 2))
+NinjaCoins = sprites.create(img`
+    . . . b b b . . 
+    . . b 5 5 5 b . 
+    . b 5 d 3 d 5 b 
+    . b 5 1 5 3 5 b 
+    . c d 1 5 3 5 c 
+    . c d d 1 d 5 c 
+    . . f d d d f . 
+    . . . f f f . . 
+    `, SpriteKind.Food)
+tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(14, 5))
+NinjaCoins = sprites.create(img`
+    . . . b b b . . 
+    . . b 5 5 5 b . 
+    . b 5 d 3 d 5 b 
+    . b 5 1 5 3 5 b 
+    . c d 1 5 3 5 c 
+    . c d d 1 d 5 c 
+    . . f d d d f . 
+    . . . f f f . . 
+    `, SpriteKind.Food)
+tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(1, 5))
+info.setScore(0)
 
+```
 # Codey's Shopping Spree
 
 ## Codey's Shopping Spree @showdialog
