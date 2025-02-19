@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.22","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.23","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
 // total=1908784 new=6.19% cached=88.85% other=4.96%
 (function (ectx) {
 'use strict';
@@ -563,7 +563,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P53724(s) {
+function _main___P54054(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1272,13 +1272,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P53724.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P53724.continuations = [  ]
+_main___P54054.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P54054.continuations = [  ]
 
-function _main___P53724_mk(s) {
+function _main___P54054_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P53724, depth: s.depth + 1,
+        parent: s, fn: _main___P54054, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -64571,5 +64571,5 @@ const sprites_StaticObstacle__C27847_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___29691","tile1___29693","tile2___29694","tile3___29695","tile4___29696","tile5___29697","tile6___29698","tile7___29699","tile9___29700","tile10___29701","tile11___29702","tile12___29703","tile8___29692","Sign___53278","Item___53281","OwnedItem___53284","Shop_Sign___53295","Fake_Name___53301","Cody___53352","NinjaStar___53375","NinjaCoins___53384"])
 
-return _main___P53724
+return _main___P54054
 })
