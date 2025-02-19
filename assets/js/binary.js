@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.45","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
-// total=1299178 new=7.95% cached=86.50% other=5.55%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.46","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
+// total=1275840 new=7.70% cached=86.77% other=5.53%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -173,7 +173,6 @@ pxtrt.mapKeyNames = [
  "enabled",
  "event",
  "eventContext",
- "factory",
  "fastRandom",
  "fgColor",
  "flags",
@@ -261,7 +260,6 @@ pxtrt.mapKeyNames = [
  "once",
  "options",
  "order",
- "otherKind",
  "overlapHandlers",
  "overlapMap",
  "overlaps",
@@ -352,7 +350,6 @@ pxtrt.mapKeyNames = [
  "spread",
  "sprite",
  "spriteCollisions",
- "spriteKind",
  "spriteNextId",
  "sprites",
  "spritesByKind",
@@ -366,7 +363,6 @@ pxtrt.mapKeyNames = [
  "text",
  "theme",
  "tileIndex",
- "tileKind",
  "tileMap",
  "tileOverlapHandlers",
  "tileSet",
@@ -433,7 +429,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P18767(s) {
+function _main___P19241(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -889,70 +885,17 @@ switch (step) {
     s.callLocIdx = 77; s.pc = 41; return s.tmp_0;
   case 41:
     r0 = s.retval;
-    s.tmp_0 = SpriteKind_create__P2480_mk(s);
-    s.callLocIdx = 78; s.pc = 42; return s.tmp_0;
-  case 42:
-    r0 = s.retval;
-    globals.Sign___18505 = (r0);
-    s.tmp_0 = SpriteKind_create__P2480_mk(s);
-    s.callLocIdx = 79; s.pc = 43; return s.tmp_0;
-  case 43:
-    r0 = s.retval;
-    globals.Item___18508 = (r0);
-    s.tmp_0 = SpriteKind_create__P2480_mk(s);
-    s.callLocIdx = 80; s.pc = 44; return s.tmp_0;
-  case 44:
-    r0 = s.retval;
-    globals.OwnedItem___18511 = (r0);
-    s.tmp_0 = scene_onOverlapTile__P2461_mk(s);
-    s.tmp_0.arg0 = globals.Player___2481;
-    s.tmp_1 = helpers_getTileByName__P3339_mk(s);
-    s.tmp_1.arg0 = "myTile0";
-    s.callLocIdx = 81; s.pc = 46; return s.tmp_1;
-  case 46:
-    r0 = s.retval;
-    s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = inline__P18517;
-    s.callLocIdx = 82; s.pc = 45; return s.tmp_0;
-  case 45:
-    r0 = s.retval;
-    s.tmp_0 = scene_onOverlapTile__P2461_mk(s);
-    s.tmp_0.arg0 = globals.Player___2481;
-    s.tmp_1 = helpers_getTileByName__P3339_mk(s);
-    s.tmp_1.arg0 = "Door tile";
-    s.callLocIdx = 83; s.pc = 48; return s.tmp_1;
-  case 48:
-    r0 = s.retval;
-    s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = inline__P18524;
-    s.callLocIdx = 84; s.pc = 47; return s.tmp_0;
-  case 47:
-    r0 = s.retval;
-    s.tmp_0 = sprites_onOverlap__P2459_mk(s);
-    s.tmp_0.arg0 = globals.Player___2481;
-    s.tmp_0.arg1 = 1;
-    s.tmp_0.arg2 = inline__P18530;
-    s.callLocIdx = 85; s.pc = 49; return s.tmp_0;
-  case 49:
-    r0 = s.retval;
-    s.tmp_0 = sprites_onOverlap__P2459_mk(s);
-    s.tmp_0.arg0 = globals.Player___2481;
-    s.tmp_0.arg1 = globals.Food___2483;
-    s.tmp_0.arg2 = inline__P18536;
-    s.callLocIdx = 86; s.pc = 50; return s.tmp_0;
-  case 50:
-    r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P18767.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P18767.continuations = [  ]
+_main___P19241.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P19241.continuations = [  ]
 
-function _main___P18767_mk(s) {
+function _main___P19241_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P18767, depth: s.depth + 1,
+        parent: s, fn: _main___P19241, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1955,675 +1898,6 @@ function myImages_inline__P7124_mk(s) {
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
-} }
-
-
-
-
-
-function inline__P18517(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-inline__P18517.info = {"start":223,"length":33,"line":5,"column":61,"endLine":7,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
-
-function inline__P18517_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: inline__P18517, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
-function inline__P18524(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-inline__P18524.info = {"start":321,"length":33,"line":8,"column":63,"endLine":10,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
-
-function inline__P18524_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: inline__P18524, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
-function inline__P18530(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-inline__P18530.info = {"start":416,"length":36,"line":11,"column":60,"endLine":13,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
-
-function inline__P18530_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: inline__P18530, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
-function inline__P18536(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-inline__P18536.info = {"start":508,"length":36,"line":14,"column":54,"endLine":16,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
-
-function inline__P18536_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: inline__P18536, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
-function sprites_onOverlap__P2459(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.sc___7175 = undefined;
-    s.overlapHandlers___7178 = undefined;
-    s.overlapMap___7181 = undefined;
-    s.associate___7184 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.arg2 = (s.lambdaArgs[2]);
-      s.lambdaArgs = null;
-    }
-    r0 = (s.arg0 == undefined);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBool(s.tmp_0);
-    if (!r0) { step = 1; continue; }
-    r0 = s.tmp_0;
-    { step = 2; continue; }
-  case 1:
-    r0 = (s.arg1 == undefined);
-  case 2:
-    // jmp value (already in r0)
-    s.tmp_1 = r0;
-    r0 = pxsim_numops_toBool(s.tmp_1);
-    if (!r0) { step = 3; continue; }
-    r0 = s.tmp_1;
-    { step = 4; continue; }
-  case 3:
-    r0 = pxsim_numops_toBoolDecr(s.arg2);
-    s.tmp_2 = r0;
-    r0 = pxsim_Boolean__bang(s.tmp_2);
-  case 4:
-    // jmp value (already in r0)
-    s.tmp_3 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_3);
-    if (!r0) { step = 5; continue; }
-    { step = 7; continue; }
-  case 5:
-  case 6:
-    s.tmp_4 = game_currentScene__P3000_mk(s);
-    s.callLocIdx = 518; s.pc = 8; return s.tmp_4;
-  case 8:
-    r0 = s.retval;
-    s.sc___7175 = (r0);
-    r0 = s.sc___7175.fields["overlapHandlers"];
-    s.overlapHandlers___7178 = (r0);
-    r0 = s.sc___7175.fields["overlapMap"];
-    s.overlapMap___7181 = (r0);
-    r0 = pxsim_pxtcore_mkAction(1, associate__P7184);
-    s.tmp_0 = r0;
-    r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.overlapMap___7181);
-    s.associate___7184 = (s.tmp_0);
-    s.tmp_1 = lambda_3_mk(s);
-    s.tmp_1.argL = s.associate___7184;
-    s.tmp_1.arg0 = s.arg0;
-    s.tmp_1.arg1 = s.arg1;
-    setupLambda(s.tmp_1, s.tmp_1.argL);
-    s.callLocIdx = 519; s.pc = 9; return s.tmp_1;
-  case 9:
-    r0 = s.retval;
-    s.tmp_0 = lambda_3_mk(s);
-    s.tmp_0.argL = s.associate___7184;
-    s.tmp_0.arg0 = s.arg1;
-    s.tmp_0.arg1 = s.arg0;
-    setupLambda(s.tmp_0, s.tmp_0.argL);
-    s.callLocIdx = 520; s.pc = 10; return s.tmp_0;
-  case 10:
-    r0 = s.retval;
-    r0 = pxsim_pxtcore_mkClassInstance(scene_OverlapHandler__C2815_VT);
-    s.tmp_0 = r0;
-    s.tmp_1 = scene_OverlapHandler_constructor__P2816_mk(s);
-    s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = s.arg0;
-    s.tmp_1.arg2 = s.arg1;
-    s.tmp_1.arg3 = s.arg2;
-    s.callLocIdx = 521; s.pc = 11; return s.tmp_1;
-  case 11:
-    r0 = s.retval;
-    r0 = pxsim_Array__push(s.overlapHandlers___7178, s.tmp_0);
-  case 7:
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-sprites_onOverlap__P2459.info = {"start":1603,"length":755,"line":50,"column":4,"endLine":74,"endColumn":5,"fileName":"pxt_modules/game/spriteevents.ts","functionName":"onOverlap","argumentNames":["kind","otherKind","handler"]}
-
-function sprites_onOverlap__P2459_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: sprites_onOverlap__P2459, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  sc___7175: undefined,
-  overlapHandlers___7178: undefined,
-  overlapMap___7181: undefined,
-  associate___7184: undefined,
-  arg0: undefined,
-  arg1: undefined,
-  arg2: undefined,
-} }
-
-
-
-
-
-function associate__P7184(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    r0 = pxsim_pxtrt.mapGetGeneric(s.caps[0], s.arg0);
-    s.tmp_2 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_2);
-    s.tmp_1 = r0;
-    r0 = pxsim_Boolean__bang(s.tmp_1);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
-    if (!r0) { step = 1; continue; }
-    s.tmp_3 = r0 = s.caps[0];
-    s.tmp_4 = r0 = s.arg0;
-    r0 = pxsim_Array__mk();
-    s.tmp_5 = r0;
-    r0 = pxsim_pxtrt.mapSetGeneric(s.tmp_3, s.tmp_4, s.tmp_5);
-  case 1:
-  case 2:
-    r0 = pxsim_pxtrt.mapGetGeneric(s.caps[0], s.arg0);
-    s.tmp_0 = r0;
-    r0 = pxsim_Array__push(s.tmp_0, s.arg1);
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-associate__P7184.info = {"start":1940,"length":172,"line":56,"column":8,"endLine":62,"endColumn":9,"fileName":"pxt_modules/game/spriteevents.ts","functionName":"associate","argumentNames":["a","b"]}
-
-function associate__P7184_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: associate__P7184, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
-function scene_OverlapHandler_constructor__P2816(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.arg2 = (s.lambdaArgs[2]);
-      s.arg3 = (s.lambdaArgs[3]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0;
-    if (!checkSubtype(r0, scene_OverlapHandler__C2815_VT)) failedCast(r0);
-    r0 = (s.arg0).fields["kind"] = (s.arg1);
-    r0 = (s.arg0).fields["otherKind"] = (s.arg2);
-    r0 = (s.arg0).fields["handler"] = (s.arg3);
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-scene_OverlapHandler_constructor__P2816.info = {"start":655,"length":171,"line":22,"column":8,"endLine":26,"endColumn":13,"fileName":"pxt_modules/game/scene.ts","functionName":"inline","argumentNames":["this","kind","otherKind","handler"]}
-
-function scene_OverlapHandler_constructor__P2816_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: scene_OverlapHandler_constructor__P2816, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  arg0: undefined,
-  arg1: undefined,
-  arg2: undefined,
-  arg3: undefined,
-} }
-
-
-
-
-
-function helpers_getTileByName__P3339(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.lambdaArgs = null;
-    }
-    s.tmp_0 = helpers__getFactoryInstance__P3334_mk(s);
-    s.tmp_0.arg0 = "tile";
-    s.tmp_0.arg1 = s.arg0;
-    s.callLocIdx = 1288; s.pc = 1; return s.tmp_0;
-  case 1:
-    r0 = s.retval;
-    return leave(s, r0)
-  default: oops()
-} } }
-helpers_getTileByName__P3339.info = {"start":3107,"length":101,"line":95,"column":4,"endLine":97,"endColumn":5,"fileName":"pxt_modules/game/assetTemplates.ts","functionName":"getTileByName","argumentNames":["name"]}
-
-function helpers_getTileByName__P3339_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: helpers_getTileByName__P3339, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  arg0: undefined,
-} }
-
-
-
-
-
-function helpers__getFactoryInstance__P3334(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.factory___7225 = undefined;
-    s.unnamed94___U1 = undefined;
-    s.unnamed95___U2 = undefined;
-    s.data___7232 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    r0 = pxsim_numops_toBoolDecr(globals.factories___5357);
-    if (!r0) { step = 7; continue; }
-    s.factory___7225 = (undefined);
-    s.unnamed94___U1 = (globals.factories___5357);
-    s.unnamed95___U2 = (0);
-  case 1:
-    s.tmp_0 = r0 = s.unnamed95___U2;
-    r0 = pxsim_Array__length(s.unnamed94___U1);
-    s.tmp_1 = r0;
-    r0 = (s.tmp_0 < s.tmp_1);
-    if (!r0) { step = 6; continue; }
-    r0 = pxsim_Array__getAt(s.unnamed94___U1, s.unnamed95___U2);
-    s.factory___7225 = (r0);
-    s.tmp_4 = if_kind_1_mk(s);
-    s.tmp_4.arg0 = s.factory___7225;
-    if (!s.tmp_4.arg0.vtable.iface) {
-      s.retval = pxsim_pxtrt.mapGetByString(s.tmp_4.arg0, "kind");
-    } else {
-      s.tmp_4.fn = s.tmp_4.arg0.vtable.iface["kind"];
-      if (s.tmp_4.fn == null) { s.retval = s.tmp_4.arg0.fields["kind"]; }
-      else if (!s.tmp_4.fn.isGetter) { s.retval = bind(s.tmp_4); }
-     else { s.callLocIdx = 1286; s.pc = 10; return s.tmp_4; }
-    }
-  case 10:
-    r0 = s.retval;
-    s.tmp_3 = r0;
-    r0 = (s.tmp_3 === s.arg0);
-    s.tmp_2 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_2);
-    if (!r0) { step = 4; continue; }
-    s.tmp_5 = if_factory_2_mk(s);
-    s.tmp_5.arg0 = s.factory___7225;
-    s.tmp_5.arg1 = s.arg1;
-    if (!s.tmp_5.arg0.vtable.iface) {
-      setupLambda(s.tmp_5, pxsim_pxtrt.mapGetByString(s.tmp_5.arg0, "factory"), 2);
-      s.callLocIdx = 1287; s.pc = 11; return s.tmp_5;
-    } else {
-      s.tmp_5.fn = s.tmp_5.arg0.vtable.iface["factory"];
-      if (s.tmp_5.fn == null) { setupLambda(s.tmp_5, s.tmp_5.arg0.fields["factory"], 2); s.callLocIdx = 1287; s.pc = 11; return s.tmp_5; }
-      else if (s.tmp_5.fn.isGetter) { s.tmp_5.stage2Call = true; s.callLocIdx = 1287; s.pc = 11; return s.tmp_5;; }
-     else { s.callLocIdx = 1287; s.pc = 11; return s.tmp_5; }
-    }
-  case 11:
-    r0 = s.retval;
-    s.data___7232 = (r0);
-    r0 = pxsim_numops_toBoolDecr(s.data___7232);
-    if (!r0) { step = 2; continue; }
-    r0 = s.data___7232;
-    { step = 9; continue; }
-  case 2:
-  case 3:
-  case 4:
-  case 5:
-    r0 = (s.unnamed95___U2 + 1);
-    s.unnamed95___U2 = (r0);
-    { step = 1; continue; }
-  case 6:
-    s.unnamed94___U1 = (undefined);
-  case 7:
-  case 8:
-    r0 = null;
-  case 9:
-    return leave(s, r0)
-  default: oops()
-} } }
-helpers__getFactoryInstance__P3334.info = {"start":2226,"length":348,"line":66,"column":4,"endLine":76,"endColumn":5,"fileName":"pxt_modules/game/assetTemplates.ts","functionName":"_getFactoryInstance","argumentNames":["kind","name"]}
-
-function helpers__getFactoryInstance__P3334_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: helpers__getFactoryInstance__P3334, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  factory___7225: undefined,
-  unnamed94___U1: undefined,
-  unnamed95___U2: undefined,
-  data___7232: undefined,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
-function assets_tile__P3329(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.lambdaArgs = null;
-    }
-    r0 = null;
-    return leave(s, r0)
-  default: oops()
-} } }
-assets_tile__P3329.info = {"start":1108,"length":70,"line":31,"column":4,"endLine":31,"endColumn":74,"fileName":"pxt_modules/game/assetTemplates.ts","functionName":"tile","argumentNames":["lits","args"]}
-
-function assets_tile__P3329_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: assets_tile__P3329, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
-
-
-
-function scene_onOverlapTile__P2461(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    s.tileOverlapHandlers___7255 = undefined;
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.arg2 = (s.lambdaArgs[2]);
-      s.lambdaArgs = null;
-    }
-    r0 = (s.arg0 == undefined);
-    s.tmp_0 = r0;
-    r0 = pxsim_numops_toBool(s.tmp_0);
-    if (!r0) { step = 1; continue; }
-    r0 = s.tmp_0;
-    { step = 2; continue; }
-  case 1:
-    r0 = pxsim_numops_toBoolDecr(s.arg1);
-    s.tmp_1 = r0;
-    r0 = pxsim_Boolean__bang(s.tmp_1);
-  case 2:
-    // jmp value (already in r0)
-    s.tmp_2 = r0;
-    r0 = pxsim_numops_toBool(s.tmp_2);
-    if (!r0) { step = 3; continue; }
-    r0 = s.tmp_2;
-    { step = 4; continue; }
-  case 3:
-    r0 = pxsim_numops_toBoolDecr(s.arg2);
-    s.tmp_3 = r0;
-    r0 = pxsim_Boolean__bang(s.tmp_3);
-  case 4:
-    // jmp value (already in r0)
-    s.tmp_4 = r0;
-    r0 = pxsim_numops_toBoolDecr(s.tmp_4);
-    if (!r0) { step = 5; continue; }
-    { step = 7; continue; }
-  case 5:
-  case 6:
-    s.tmp_5 = game_currentScene__P3000_mk(s);
-    s.callLocIdx = 522; s.pc = 8; return s.tmp_5;
-  case 8:
-    r0 = s.retval;
-    r0 = r0.fields["tileOverlapHandlers"];
-    s.tileOverlapHandlers___7255 = (r0);
-    r0 = pxsim_pxtcore_mkClassInstance(scene_TileOverlapHandler__C2819_VT);
-    s.tmp_0 = r0;
-    s.tmp_1 = scene_TileOverlapHandler_constructor__P2820_mk(s);
-    s.tmp_1.arg0 = s.tmp_0;
-    s.tmp_1.arg1 = s.arg0;
-    s.tmp_1.arg2 = s.arg1;
-    s.tmp_1.arg3 = s.arg2;
-    s.callLocIdx = 523; s.pc = 9; return s.tmp_1;
-  case 9:
-    r0 = s.retval;
-    r0 = pxsim_Array__push(s.tileOverlapHandlers___7255, s.tmp_0);
-  case 7:
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-scene_onOverlapTile__P2461.info = {"start":2786,"length":432,"line":89,"column":4,"endLine":100,"endColumn":5,"fileName":"pxt_modules/game/spriteevents.ts","functionName":"onOverlapTile","argumentNames":["kind","tile","handler"]}
-
-function scene_onOverlapTile__P2461_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: scene_onOverlapTile__P2461, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  tmp_5: undefined,
-  tileOverlapHandlers___7255: undefined,
-  arg0: undefined,
-  arg1: undefined,
-  arg2: undefined,
-} }
-
-
-
-
-
-function scene_TileOverlapHandler_constructor__P2820(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.arg1 = (s.lambdaArgs[1]);
-      s.arg2 = (s.lambdaArgs[2]);
-      s.arg3 = (s.lambdaArgs[3]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0;
-    if (!checkSubtype(r0, scene_TileOverlapHandler__C2819_VT)) failedCast(r0);
-    r0 = (s.arg0).fields["spriteKind"] = (s.arg1);
-    r0 = (s.arg0).fields["tileKind"] = (s.arg2);
-    r0 = (s.arg0).fields["handler"] = (s.arg3);
-    r0 = undefined;
-    return leave(s, r0)
-  default: oops()
-} } }
-scene_TileOverlapHandler_constructor__P2820.info = {"start":1075,"length":180,"line":37,"column":8,"endLine":41,"endColumn":13,"fileName":"pxt_modules/game/scene.ts","functionName":"inline","argumentNames":["this","spriteKind","tileKind","handler"]}
-
-function scene_TileOverlapHandler_constructor__P2820_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: scene_TileOverlapHandler_constructor__P2820, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  arg0: undefined,
-  arg1: undefined,
-  arg2: undefined,
-  arg3: undefined,
 } }
 
 
@@ -29439,41 +28713,6 @@ function sprites_SpriteSet_length__P2467_mk(s) {
 
 
 
-function particles_ParticleSource_factory__P3170(s) {
-let r0 = s.r0, step = s.pc;
-s.pc = -1;
-
-
-while (true) {
-if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
-switch (step) {
-  case 0:
-
-    if (s.lambdaArgs) {
-      s.arg0 = (s.lambdaArgs[0]);
-      s.lambdaArgs = null;
-    }
-    r0 = s.arg0;
-    if (!checkSubtype(r0, particles_ParticleSource__C3152_VT)) failedCast(r0);
-    r0 = s.arg0.fields["_factory"];
-    return leaveAccessor(s, r0)
-  default: oops()
-} } }
-particles_ParticleSource_factory__P3170.info = {"start":7951,"length":76,"line":264,"column":8,"endLine":266,"endColumn":9,"fileName":"pxt_modules/game/particles.ts","functionName":"factory","argumentNames":["this"]}
-particles_ParticleSource_factory__P3170.isGetter = true;
-
-function particles_ParticleSource_factory__P3170_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: particles_ParticleSource_factory__P3170, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  arg0: undefined,
-} }
-
-
-
-
-
 function particles_ParticleSource___draw__P3158(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
@@ -41516,51 +40755,6 @@ function scene_Camera_left__P2793_mk(s) {
 
 
 
-function lambda_3_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: null, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  arg0: undefined,
-  arg1: undefined,
-  arg2: undefined,
-} }
-
-
-function if_kind_1_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: null, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  arg0: undefined,
-} }
-
-
-function if_factory_2_mk(s) {
-    checkStack(s.depth);
-    return {
-        parent: s, fn: null, depth: s.depth + 1,
-        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
-  tmp_0: undefined,
-  tmp_1: undefined,
-  tmp_2: undefined,
-  tmp_3: undefined,
-  tmp_4: undefined,
-  arg0: undefined,
-  arg1: undefined,
-} }
-
-
 function PhysicsEngine__C2512_v4_2_mk(s) {
     checkStack(s.depth);
     return {
@@ -41759,6 +40953,22 @@ function if_id_1_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   arg0: undefined,
+} }
+
+
+function lambda_3_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: null, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  tmp_0: undefined,
+  tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  arg0: undefined,
+  arg1: undefined,
+  arg2: undefined,
 } }
 
 
@@ -42717,45 +41927,11 @@ const Math_FastRandom__C3060_VT = mkVTable({
     "pickRandom": Math_FastRandom_pickRandom__P3065,
   },
 });
-const scene_OverlapHandler__C2815_VT = mkVTable({
-  name: "OverlapHandler",
-  numFields: 3,
-  classNo: 21,
-  lastSubtypeNo: 21,
-  maxBgInstances: null,
-  methods: {
-  },
-  iface: {
-    "kind": null,
-    "set/kind": null,
-    "otherKind": null,
-    "set/otherKind": null,
-    "handler": null,
-    "set/handler": null,
-  },
-});
-const scene_TileOverlapHandler__C2819_VT = mkVTable({
-  name: "TileOverlapHandler",
-  numFields: 3,
-  classNo: 22,
-  lastSubtypeNo: 22,
-  maxBgInstances: null,
-  methods: {
-  },
-  iface: {
-    "spriteKind": null,
-    "set/spriteKind": null,
-    "tileKind": null,
-    "set/tileKind": null,
-    "handler": null,
-    "set/handler": null,
-  },
-});
 const tiles_TileMapData__C2718_VT = mkVTable({
   name: "TileMapData",
   numFields: 7,
-  classNo: 23,
-  lastSubtypeNo: 23,
+  classNo: 21,
+  lastSubtypeNo: 21,
   maxBgInstances: null,
   methods: {
   },
@@ -42787,8 +41963,8 @@ const tiles_TileMapData__C2718_VT = mkVTable({
 const scene_Scene__C2844_VT = mkVTable({
   name: "Scene",
   numFields: 25,
-  classNo: 24,
-  lastSubtypeNo: 24,
+  classNo: 22,
+  lastSubtypeNo: 22,
   maxBgInstances: null,
   methods: {
   },
@@ -42853,8 +42029,8 @@ const scene_Scene__C2844_VT = mkVTable({
 const control_EventContext__C395_VT = mkVTable({
   name: "EventContext",
   numFields: 10,
-  classNo: 25,
-  lastSubtypeNo: 25,
+  classNo: 23,
+  lastSubtypeNo: 23,
   maxBgInstances: null,
   methods: {
   },
@@ -42891,8 +42067,8 @@ const control_EventContext__C395_VT = mkVTable({
 const PhysicsEngine__C2512_VT = mkVTable({
   name: "PhysicsEngine",
   numFields: 0,
-  classNo: 26,
-  lastSubtypeNo: 27,
+  classNo: 24,
+  lastSubtypeNo: 25,
   maxBgInstances: null,
   methods: {
     "addSprite": PhysicsEngine_addSprite__P2514,
@@ -42912,8 +42088,8 @@ const PhysicsEngine__C2512_VT = mkVTable({
 const scene_Camera__C2782_VT = mkVTable({
   name: "Camera",
   numFields: 10,
-  classNo: 28,
-  lastSubtypeNo: 28,
+  classNo: 26,
+  lastSubtypeNo: 26,
   maxBgInstances: null,
   methods: {
   },
@@ -42953,8 +42129,8 @@ const scene_Camera__C2782_VT = mkVTable({
 const control_EventHandler__C4429_VT = mkVTable({
   name: "EventHandler",
   numFields: 4,
-  classNo: 29,
-  lastSubtypeNo: 29,
+  classNo: 27,
+  lastSubtypeNo: 27,
   maxBgInstances: null,
   methods: {
   },
@@ -42974,8 +42150,8 @@ const control_EventHandler__C4429_VT = mkVTable({
 const scene_Background__C2670_VT = mkVTable({
   name: "Background",
   numFields: 4,
-  classNo: 30,
-  lastSubtypeNo: 30,
+  classNo: 28,
+  lastSubtypeNo: 28,
   maxBgInstances: null,
   methods: {
   },
@@ -42994,8 +42170,8 @@ const scene_Background__C2670_VT = mkVTable({
 const scene_BackgroundLayer__C2680_VT = mkVTable({
   name: "BackgroundLayer",
   numFields: 6,
-  classNo: 31,
-  lastSubtypeNo: 31,
+  classNo: 29,
+  lastSubtypeNo: 29,
   maxBgInstances: null,
   methods: {
   },
@@ -43018,8 +42194,8 @@ const scene_BackgroundLayer__C2680_VT = mkVTable({
 const sprites_BaseSprite__C2095_VT = mkVTable({
   name: "BaseSprite",
   numFields: 2,
-  classNo: 32,
-  lastSubtypeNo: 35,
+  classNo: 30,
+  lastSubtypeNo: 33,
   maxBgInstances: null,
   methods: {
     "__visible": sprites_BaseSprite___visible__P2098,
@@ -43043,8 +42219,8 @@ const sprites_BaseSprite__C2095_VT = mkVTable({
 const Sprite__C2342_VT = mkVTable({
   name: "Sprite",
   numFields: 30,
-  classNo: 33,
-  lastSubtypeNo: 33,
+  classNo: 31,
+  lastSubtypeNo: 31,
   maxBgInstances: null,
   methods: {
     "__visible": Sprite___visible__P2397,
@@ -43179,8 +42355,8 @@ const Sprite__C2342_VT = mkVTable({
 const tiles_TileMap__C2736_VT = mkVTable({
   name: "TileMap",
   numFields: 5,
-  classNo: 36,
-  lastSubtypeNo: 36,
+  classNo: 34,
+  lastSubtypeNo: 34,
   maxBgInstances: null,
   methods: {
   },
@@ -43216,8 +42392,8 @@ const tiles_TileMap__C2736_VT = mkVTable({
 const control_FrameCallback__C392_VT = mkVTable({
   name: "FrameCallback",
   numFields: 2,
-  classNo: 37,
-  lastSubtypeNo: 37,
+  classNo: 35,
+  lastSubtypeNo: 35,
   maxBgInstances: null,
   methods: {
   },
@@ -43231,8 +42407,8 @@ const control_FrameCallback__C392_VT = mkVTable({
 const control_PollEvent__C4408_VT = mkVTable({
   name: "PollEvent",
   numFields: 6,
-  classNo: 38,
-  lastSubtypeNo: 38,
+  classNo: 36,
+  lastSubtypeNo: 36,
   maxBgInstances: null,
   methods: {
   },
@@ -43254,8 +42430,8 @@ const control_PollEvent__C4408_VT = mkVTable({
 const ArcadePhysicsEngine__C2528_VT = mkVTable({
   name: "ArcadePhysicsEngine",
   numFields: 6,
-  classNo: 27,
-  lastSubtypeNo: 27,
+  classNo: 25,
+  lastSubtypeNo: 25,
   maxBgInstances: null,
   methods: {
     "addSprite": ArcadePhysicsEngine_addSprite__P2537,
@@ -43300,8 +42476,8 @@ const ArcadePhysicsEngine__C2528_VT = mkVTable({
 const sprites_SpriteMap__C2447_VT = mkVTable({
   name: "SpriteMap",
   numFields: 5,
-  classNo: 39,
-  lastSubtypeNo: 39,
+  classNo: 37,
+  lastSubtypeNo: 37,
   maxBgInstances: null,
   methods: {
   },
@@ -43332,8 +42508,8 @@ const sprites_SpriteMap__C2447_VT = mkVTable({
 const scene_systemMenu_PauseMenu__C3096_VT = mkVTable({
   name: "PauseMenu",
   numFields: 7,
-  classNo: 40,
-  lastSubtypeNo: 40,
+  classNo: 38,
+  lastSubtypeNo: 38,
   maxBgInstances: null,
   methods: {
   },
@@ -43363,8 +42539,8 @@ const scene_systemMenu_PauseMenu__C3096_VT = mkVTable({
 const scene_systemMenu_MenuOption__C3088_VT = mkVTable({
   name: "MenuOption",
   numFields: 8,
-  classNo: 41,
-  lastSubtypeNo: 41,
+  classNo: 39,
+  lastSubtypeNo: 39,
   maxBgInstances: null,
   methods: {
   },
@@ -43397,8 +42573,8 @@ const scene_systemMenu_MenuOption__C3088_VT = mkVTable({
 const effects_ParticleEffect__C3263_VT = mkVTable({
   name: "ParticleEffect",
   numFields: 3,
-  classNo: 42,
-  lastSubtypeNo: 43,
+  classNo: 40,
+  lastSubtypeNo: 41,
   maxBgInstances: null,
   methods: {
   },
@@ -43416,8 +42592,8 @@ const effects_ParticleEffect__C3263_VT = mkVTable({
 const effects_ImageEffect__C3291_VT = mkVTable({
   name: "ImageEffect",
   numFields: 4,
-  classNo: 44,
-  lastSubtypeNo: 44,
+  classNo: 42,
+  lastSubtypeNo: 42,
   maxBgInstances: null,
   methods: {
   },
@@ -43437,8 +42613,8 @@ const effects_ImageEffect__C3291_VT = mkVTable({
 const game_Hitbox__C2209_VT = mkVTable({
   name: "Hitbox",
   numFields: 6,
-  classNo: 45,
-  lastSubtypeNo: 45,
+  classNo: 43,
+  lastSubtypeNo: 43,
   maxBgInstances: null,
   methods: {
   },
@@ -43468,8 +42644,8 @@ const game_Hitbox__C2209_VT = mkVTable({
 const particles_ParticleSource__C3152_VT = mkVTable({
   name: "ParticleSource",
   numFields: 13,
-  classNo: 34,
-  lastSubtypeNo: 34,
+  classNo: 32,
+  lastSubtypeNo: 32,
   maxBgInstances: null,
   methods: {
     "__visible": sprites_BaseSprite___visible__P2098,
@@ -43516,7 +42692,6 @@ const particles_ParticleSource__C3152_VT = mkVTable({
     "clear": particles_ParticleSource_clear__P3167,
     "setAnchor": particles_ParticleSource_setAnchor__P3168,
     "setRate": particles_ParticleSource_setRate__P3169,
-    "factory": particles_ParticleSource_factory__P3170,
     "setFactory": particles_ParticleSource_setFactory__P3171,
     "updateParticle": particles_ParticleSource_updateParticle__P5279,
     "drawParticle": particles_ParticleSource_drawParticle__P5280,
@@ -43530,8 +42705,8 @@ const particles_ParticleSource__C3152_VT = mkVTable({
 const sprites_SpriteSet__C2464_VT = mkVTable({
   name: "SpriteSet",
   numFields: 1,
-  classNo: 46,
-  lastSubtypeNo: 46,
+  classNo: 44,
+  lastSubtypeNo: 44,
   maxBgInstances: null,
   methods: {
   },
@@ -43549,8 +42724,8 @@ const sprites_SpriteSet__C2464_VT = mkVTable({
 const scene_Renderable__C2801_VT = mkVTable({
   name: "Renderable",
   numFields: 4,
-  classNo: 35,
-  lastSubtypeNo: 35,
+  classNo: 33,
+  lastSubtypeNo: 33,
   maxBgInstances: null,
   methods: {
     "__visible": scene_Renderable___visible__P2803,
@@ -43578,8 +42753,8 @@ const scene_Renderable__C2801_VT = mkVTable({
 const controller_ButtonHandler__C2184_VT = mkVTable({
   name: "ButtonHandler",
   numFields: 2,
-  classNo: 47,
-  lastSubtypeNo: 47,
+  classNo: 45,
+  lastSubtypeNo: 45,
   maxBgInstances: null,
   methods: {
   },
@@ -43593,8 +42768,8 @@ const controller_ButtonHandler__C2184_VT = mkVTable({
 const controller_ButtonEventHandlerState__C2186_VT = mkVTable({
   name: "ButtonEventHandlerState",
   numFields: 3,
-  classNo: 48,
-  lastSubtypeNo: 48,
+  classNo: 46,
+  lastSubtypeNo: 46,
   maxBgInstances: null,
   methods: {
   },
@@ -43610,8 +42785,8 @@ const controller_ButtonEventHandlerState__C2186_VT = mkVTable({
 const effects_ScreenEffect__C3267_VT = mkVTable({
   name: "ScreenEffect",
   numFields: 5,
-  classNo: 43,
-  lastSubtypeNo: 43,
+  classNo: 41,
+  lastSubtypeNo: 41,
   maxBgInstances: null,
   methods: {
   },
@@ -43633,8 +42808,8 @@ const effects_ScreenEffect__C3267_VT = mkVTable({
 const particles_ParticleFactory__C3188_VT = mkVTable({
   name: "ParticleFactory",
   numFields: 0,
-  classNo: 49,
-  lastSubtypeNo: 53,
+  classNo: 47,
+  lastSubtypeNo: 51,
   maxBgInstances: null,
   methods: {
     "createParticle": particles_ParticleFactory_createParticle__P3190,
@@ -43648,8 +42823,8 @@ const particles_ParticleFactory__C3188_VT = mkVTable({
 const particles_SprayFactory__C3192_VT = mkVTable({
   name: "SprayFactory",
   numFields: 3,
-  classNo: 50,
-  lastSubtypeNo: 53,
+  classNo: 48,
+  lastSubtypeNo: 51,
   maxBgInstances: null,
   methods: {
     "createParticle": particles_SprayFactory_createParticle__P3194,
@@ -43671,8 +42846,8 @@ const particles_SprayFactory__C3192_VT = mkVTable({
 const particles_AreaFactory__C3198_VT = mkVTable({
   name: "AreaFactory",
   numFields: 8,
-  classNo: 51,
-  lastSubtypeNo: 53,
+  classNo: 49,
+  lastSubtypeNo: 51,
   maxBgInstances: null,
   methods: {
     "createParticle": particles_AreaFactory_createParticle__P3204,
@@ -43704,8 +42879,8 @@ const particles_AreaFactory__C3198_VT = mkVTable({
 const particles_ShapeFactory__C3214_VT = mkVTable({
   name: "ShapeFactory",
   numFields: 11,
-  classNo: 52,
-  lastSubtypeNo: 53,
+  classNo: 50,
+  lastSubtypeNo: 51,
   maxBgInstances: null,
   methods: {
     "createParticle": particles_ShapeFactory_createParticle__P3218,
@@ -43744,8 +42919,8 @@ const particles_ShapeFactory__C3214_VT = mkVTable({
 const particles_ConfettiFactory__C3219_VT = mkVTable({
   name: "ConfettiFactory",
   numFields: 11,
-  classNo: 53,
-  lastSubtypeNo: 53,
+  classNo: 51,
+  lastSubtypeNo: 51,
   maxBgInstances: null,
   methods: {
     "createParticle": particles_ShapeFactory_createParticle__P3218,
@@ -43784,8 +42959,8 @@ const particles_ConfettiFactory__C3219_VT = mkVTable({
 const particles_Particle__C3133_VT = mkVTable({
   name: "Particle",
   numFields: 8,
-  classNo: 54,
-  lastSubtypeNo: 54,
+  classNo: 52,
+  lastSubtypeNo: 52,
   maxBgInstances: 200,
   methods: {
   },
@@ -43811,8 +42986,8 @@ const particles_Particle__C3133_VT = mkVTable({
 const music_Playable__C1912_VT = mkVTable({
   name: "Playable",
   numFields: 1,
-  classNo: 55,
-  lastSubtypeNo: 56,
+  classNo: 53,
+  lastSubtypeNo: 54,
   maxBgInstances: null,
   methods: {
   },
@@ -43824,8 +42999,8 @@ const music_Playable__C1912_VT = mkVTable({
 const music_MelodyPlayable__C1917_VT = mkVTable({
   name: "MelodyPlayable",
   numFields: 2,
-  classNo: 56,
-  lastSubtypeNo: 56,
+  classNo: 54,
+  lastSubtypeNo: 54,
   maxBgInstances: null,
   methods: {
   },
@@ -43839,8 +43014,8 @@ const music_MelodyPlayable__C1917_VT = mkVTable({
 const music_Melody__C1627_VT = mkVTable({
   name: "Melody",
   numFields: 2,
-  classNo: 57,
-  lastSubtypeNo: 57,
+  classNo: 55,
+  lastSubtypeNo: 55,
   maxBgInstances: null,
   methods: {
   },
@@ -43856,8 +43031,8 @@ const music_Melody__C1627_VT = mkVTable({
 const MovingSprite__C2526_VT = mkVTable({
   name: "MovingSprite",
   numFields: 7,
-  classNo: 58,
-  lastSubtypeNo: 58,
+  classNo: 56,
+  lastSubtypeNo: 56,
   maxBgInstances: null,
   methods: {
   },
@@ -43881,8 +43056,8 @@ const MovingSprite__C2526_VT = mkVTable({
 const tiles_Location__C2694_VT = mkVTable({
   name: "Location",
   numFields: 2,
-  classNo: 59,
-  lastSubtypeNo: 59,
+  classNo: 57,
+  lastSubtypeNo: 57,
   maxBgInstances: null,
   methods: {
   },
@@ -43904,8 +43079,8 @@ const tiles_Location__C2694_VT = mkVTable({
 const sprites_StaticObstacle__C2499_VT = mkVTable({
   name: "StaticObstacle",
   numFields: 5,
-  classNo: 60,
-  lastSubtypeNo: 60,
+  classNo: 58,
+  lastSubtypeNo: 58,
   maxBgInstances: null,
   methods: {
   },
@@ -43929,8 +43104,8 @@ const sprites_StaticObstacle__C2499_VT = mkVTable({
 const sprites_BaseSpriteSayRenderer__C2260_VT = mkVTable({
   name: "BaseSpriteSayRenderer",
   numFields: 3,
-  classNo: 61,
-  lastSubtypeNo: 61,
+  classNo: 59,
+  lastSubtypeNo: 59,
   maxBgInstances: null,
   methods: {
     "draw": sprites_BaseSpriteSayRenderer_draw__P2262,
@@ -43950,7 +43125,7 @@ const sprites_BaseSpriteSayRenderer__C2260_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["transparency16___4337","tile1___4338","tile2___4339","tile3___4340","tile4___4341","tile5___4342","tile6___4343","tile7___4344","tile9___4345","tile10___4346","tile11___4347","tile12___4348","Sign___18505","Item___18508","OwnedItem___18511"])
+const breakpoints = setupDebugger(1, ["transparency16___4337","tile1___4338","tile2___4339","tile3___4340","tile4___4341","tile5___4342","tile6___4343","tile7___4344","tile9___4345","tile10___4346","tile11___4347","tile12___4348"])
 
-return _main___P18767
+return _main___P19241
 })
