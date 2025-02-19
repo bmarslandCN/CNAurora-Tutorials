@@ -14,7 +14,44 @@
   "tutorial-info-cache.json": "{\"https://github.com/mame-mor-m/code-ninjas-tutorials\":{\"snippetBlocks\":{},\"usedBlocks\":{},\"highlightBlocks\":{},\"hash\":\"9e6820b544695f18661751794d716b475364ea1fa7a324e9bce380047e27fc78\"},\"https://github.com/mame-mor-m/code-ninjas-tutorials/Riddle1\":{\"snippetBlocks\":{\"0b9d0fafd22d4353b855e0f823a61473947bf9914438e16e939b12abcab98270\":{\"spriteshittile\":2,\"spritesoverlap\":2,\"pxt-on-start\":1,\"spritesaytext\":4,\"controls_if\":1,\"hudChangeScoreBy\":1,\"set_current_tilemap\":1,\"text_join\":2,\"spritesetpos\":2,\"logic_compare\":1,\"spriteFollowOtherSprite\":1,\"variables_set\":9,\"variables_get\":2,\"argument_reporter_custom\":7,\"hudScore\":1,\"spritesetkind\":1,\"spritescreate\":7,\"mapplaceontile\":7,\"camerafollow\":1,\"game_control_sprite\":1,\"text\":2,\"hudsetScore\":1}},\"usedBlocks\":{\"spriteshittile\":1,\"spritesoverlap\":1,\"pxt-on-start\":1,\"spritesaytext\":1,\"controls_if\":1,\"hudChangeScoreBy\":1,\"set_current_tilemap\":1,\"text_join\":1,\"spritesetpos\":1,\"logic_compare\":1,\"spriteFollowOtherSprite\":1,\"variables_set\":1,\"variables_get\":1,\"argument_reporter_custom\":1,\"hudScore\":1,\"spritesetkind\":1,\"spritescreate\":1,\"mapplaceontile\":1,\"camerafollow\":1,\"game_control_sprite\":1,\"text\":1,\"hudsetScore\":1},\"highlightBlocks\":{\"0b9d0fafd22d4353b855e0f823a61473947bf9914438e16e939b12abcab98270\":{}},\"hash\":\"0b9d0fafd22d4353b855e0f823a61473947bf9914438e16e939b12abcab98270\"}}"
 }
 ```
+
+# Codey's Shopping Spree
+
+## Codey's Shopping Spree @showdialog
+Hello Ninjas, welcome to the first riddle of the Code Ninjas 2nd year anniversary event!
+
+You will be guided through these activities with steps and clues of what needs to be solved in this side panel, if you think everythings correct, move on to the next step!
+
+## Step 1
+Somethings missing! Design your own codey sprite, sign sprite, and ninja star sprite so there are no more empty sprites!
+
+## Step 2
+Codey is trying to buy decorations for the center as the 2nd year anniversary approaches. He heads over to the ninja shop in search of something matching the ninja theme, unfortunately he runs into a problem.
+
+Fix the bug in the code so Codey can enter the ninja shop!
+
+Codey makes his way into the ninja shop but notices something is off with the sign, he starts to think that this is not the right shop
+
+What's wrong with the sign text? Fix the code!
+
+## Step 3
+
+Cody enters the store and picks up a few ninja stars and some ninja belts, Cody his wallet to pay and notices a hole at the bottom, he has no money but somehow the cashier lets him leave for free
+
+Make sure Cody has to pay for the decorations!
+
+Reminder: The player shouldn't be able to pick up a coin more than once
+
+
+## Riddle Answer: NINJA STAR @showdialog
+THIS IS THE ANSWER TO THE RIDDLE
+
 ```template
+namespace SpriteKind {
+    export const Sign = SpriteKind.create()
+    export const Item = SpriteKind.create()
+    export const OwnedItem = SpriteKind.create()
+}
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     Shop_Sign.sayText("Welcome to the " + Fake_Name, 1000, false)
     sprite.setPosition(130, 250)
@@ -95,33 +132,3 @@ tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(1, 5))
 info.setScore(0)
 
 ```
-# Codey's Shopping Spree
-
-## Codey's Shopping Spree @showdialog
-Hello Ninjas, welcome to the first riddle of the Code Ninjas 2nd year anniversary event!
-
-You will be guided through these activities with steps and clues of what needs to be solved in this side panel, if you think everythings correct, move on to the next step!
-
-## Step 1
-Somethings missing! Design your own codey sprite, sign sprite, and ninja star sprite so there are no more empty sprites!
-
-## Step 2
-Codey is trying to buy decorations for the center as the 2nd year anniversary approaches. He heads over to the ninja shop in search of something matching the ninja theme, unfortunately he runs into a problem.
-
-Fix the bug in the code so Codey can enter the ninja shop!
-
-Codey makes his way into the ninja shop but notices something is off with the sign, he starts to think that this is not the right shop
-
-What's wrong with the sign text? Fix the code!
-
-## Step 3
-
-Cody enters the store and picks up a few ninja stars and some ninja belts, Cody his wallet to pay and notices a hole at the bottom, he has no money but somehow the cashier lets him leave for free
-
-Make sure Cody has to pay for the decorations!
-
-Reminder: The player shouldn't be able to pick up a coin more than once
-
-
-## Riddle Answer: NINJA STAR @showdialog
-THIS IS THE ANSWER TO THE RIDDLE
