@@ -17,7 +17,8 @@
         "tilemap.g.ts",
         "images.g.jres",
         "images.g.ts",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "Riddle2.md"
     ],
     "testFiles": [
         "test.ts"
