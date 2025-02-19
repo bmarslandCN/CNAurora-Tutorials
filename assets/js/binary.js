@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.39","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.40","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
 // total=1937762 new=5.86% cached=89.06% other=5.08%
 (function (ectx) {
 'use strict';
@@ -569,7 +569,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P368549(s) {
+function _main___P369137(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1278,13 +1278,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P368549.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P368549.continuations = [  ]
+_main___P369137.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P369137.continuations = [  ]
 
-function _main___P368549_mk(s) {
+function _main___P369137_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P368549, depth: s.depth + 1,
+        parent: s, fn: _main___P369137, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -65199,5 +65199,5 @@ const sprites_StaticObstacle__C343596_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___345771","tile1___345772","tile2___345773","tile3___345774","tile4___345775","tile5___345776","tile6___345777","tile7___345778","tile9___345779","tile10___345780","tile11___345781","tile12___345782","Sign___367306","Item___367309","OwnedItem___367312","Shop_Sign___367323","Fake_Name___367329","Cody___367380","NinjaStar___367403","NinjaCoins___367412"])
 
-return _main___P368549
+return _main___P369137
 })
