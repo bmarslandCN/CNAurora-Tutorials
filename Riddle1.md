@@ -53,11 +53,6 @@ Reminder: The player shouldn't be able to pick up a coin more than once
 THIS IS THE ANSWER TO THE RIDDLE
 
 ```template
-namespace SpriteKind {
-    export const Sign = SpriteKind.create()
-    export const Item = SpriteKind.create()
-    export const OwnedItem = SpriteKind.create()
-}
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     Shop_Sign.sayText("Welcome to the " + Fake_Name, 1000, false)
     sprite.setPosition(130, 250)
