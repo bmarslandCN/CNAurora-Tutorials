@@ -17,7 +17,12 @@
         "images.g.jres",
         "images.g.ts",
         "tutorial-info-cache.json",
-        "Riddle2.md"
+        "Riddle2.md",
+        "Riddle3.md",
+        "Riddle4.md",
+        "Riddle5.md",
+        "Riddle6.md",
+        "Riddle7.md"
     ],
     "testFiles": [
         "test.ts"
