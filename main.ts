@@ -11,10 +11,5 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
 	
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
-    info.changeScoreBy(1)
+	
 })
-tiles.setCurrentTilemap(tilemap`Dojo`)
-let Cody = sprites.create(assets.image`Ninja`, SpriteKind.Player)
-tiles.placeOnTile(Cody, tiles.getTileLocation(8, 4))
-controller.moveSprite(Cody)
-scene.cameraFollowSprite(Cody)

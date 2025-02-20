@@ -1,4 +1,6 @@
-# Time to Decorate! @showdialog
+# Time to Decorate!
+
+## Time to Decorate! @showdialog
 Hello ninjas, it's time to decorate! 
 
 As codey makes his way back to the center he creates a map pinpointing the locations where each decoration will be placed. Your task is to make sure all decorations are placed in the correct location
