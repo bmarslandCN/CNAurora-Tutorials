@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.50","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.51","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
 // total=1306874 new=8.43% cached=86.05% other=5.52%
 (function (ectx) {
 'use strict';
@@ -433,7 +433,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P28665(s) {
+function _main___P29282(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -897,7 +897,7 @@ switch (step) {
     s.callLocIdx = 81; s.pc = 42; return s.tmp_0;
   case 42:
     r0 = s.retval;
-    globals.OwnedItem___28619 = (r0);
+    globals.OwnedItem___28946 = (r0);
     s.tmp_0 = scene_onOverlapTile__P2461_mk(s);
     s.tmp_0.arg0 = globals.Player___2481;
     s.tmp_1 = helpers_getTileByName__P3339_mk(s);
@@ -906,7 +906,7 @@ switch (step) {
   case 44:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = inline__P28625;
+    s.tmp_0.arg2 = inline__P28952;
     s.callLocIdx = 83; s.pc = 43; return s.tmp_0;
   case 43:
     r0 = s.retval;
@@ -918,21 +918,21 @@ switch (step) {
   case 46:
     r0 = s.retval;
     s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = inline__P28632;
+    s.tmp_0.arg2 = inline__P28959;
     s.callLocIdx = 85; s.pc = 45; return s.tmp_0;
   case 45:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P2459_mk(s);
     s.tmp_0.arg0 = globals.Player___2481;
     s.tmp_0.arg1 = 1;
-    s.tmp_0.arg2 = inline__P28638;
+    s.tmp_0.arg2 = inline__P28965;
     s.callLocIdx = 86; s.pc = 47; return s.tmp_0;
   case 47:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P2459_mk(s);
     s.tmp_0.arg0 = globals.Player___2481;
     s.tmp_0.arg1 = globals.Food___2483;
-    s.tmp_0.arg2 = inline__P28644;
+    s.tmp_0.arg2 = inline__P28971;
     s.callLocIdx = 87; s.pc = 48; return s.tmp_0;
   case 48:
     r0 = s.retval;
@@ -940,13 +940,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P28665.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P28665.continuations = [  ]
+_main___P29282.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P29282.continuations = [  ]
 
-function _main___P28665_mk(s) {
+function _main___P29282_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P28665, depth: s.depth + 1,
+        parent: s, fn: _main___P29282, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2048,7 +2048,7 @@ function myImages_inline__P7128_mk(s) {
 
 
 
-function inline__P28625(s) {
+function inline__P28952(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2067,12 +2067,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P28625.info = {"start":135,"length":33,"line":3,"column":61,"endLine":5,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P28952.info = {"start":135,"length":33,"line":3,"column":61,"endLine":5,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P28625_mk(s) {
+function inline__P28952_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P28625, depth: s.depth + 1,
+        parent: s, fn: inline__P28952, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
   arg1: undefined,
@@ -2082,7 +2082,7 @@ function inline__P28625_mk(s) {
 
 
 
-function inline__P28632(s) {
+function inline__P28959(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2101,12 +2101,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P28632.info = {"start":233,"length":33,"line":6,"column":63,"endLine":8,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P28959.info = {"start":233,"length":33,"line":6,"column":63,"endLine":8,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P28632_mk(s) {
+function inline__P28959_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P28632, depth: s.depth + 1,
+        parent: s, fn: inline__P28959, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
   arg1: undefined,
@@ -2116,7 +2116,7 @@ function inline__P28632_mk(s) {
 
 
 
-function inline__P28638(s) {
+function inline__P28965(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2135,12 +2135,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P28638.info = {"start":328,"length":36,"line":9,"column":60,"endLine":11,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P28965.info = {"start":328,"length":36,"line":9,"column":60,"endLine":11,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P28638_mk(s) {
+function inline__P28965_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P28638, depth: s.depth + 1,
+        parent: s, fn: inline__P28965, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
   arg1: undefined,
@@ -2150,7 +2150,7 @@ function inline__P28638_mk(s) {
 
 
 
-function inline__P28644(s) {
+function inline__P28971(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2169,12 +2169,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P28644.info = {"start":420,"length":36,"line":12,"column":54,"endLine":14,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
+inline__P28971.info = {"start":420,"length":36,"line":12,"column":54,"endLine":14,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","otherSprite"]}
 
-function inline__P28644_mk(s) {
+function inline__P28971_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P28644, depth: s.depth + 1,
+        parent: s, fn: inline__P28971, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
   arg1: undefined,
@@ -44037,7 +44037,7 @@ const sprites_BaseSpriteSayRenderer__C2260_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["transparency16___28351","tile1___28354","tile2___28357","tile3___28360","tile4___28363","tile5___28366","tile6___28369","tile7___28372","tile9___28375","tile10___28378","tile11___28381","tile12___28384","tile8___28387","OwnedItem___28619"])
+const breakpoints = setupDebugger(1, ["transparency16___28351","tile1___28354","tile2___28357","tile3___28360","tile4___28363","tile5___28366","tile6___28369","tile7___28372","tile9___28375","tile10___28378","tile11___28381","tile12___28384","tile8___28387","OwnedItem___28946"])
 
-return _main___P28665
+return _main___P29282
 })
