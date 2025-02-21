@@ -3,7 +3,8 @@
     "version": "0.0.51",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "Codey's Shopping Spree": "github:mame-mor-m/anniversary-first-tutorial#v0.0.10"
     },
     "files": [
         "main.blocks",
@@ -33,5 +34,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
